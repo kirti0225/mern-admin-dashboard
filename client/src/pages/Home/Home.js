@@ -126,7 +126,7 @@ const Home = () => {
         <div className="main_div">
           {/* search add btn */}
           <div className="search_add mt-4 d-flex justify-content-between">
-            <div className="search col-lg-4">
+            <div className="search1 col-lg-4">
               <Form className="d-flex">
                 <Form.Control
                   type="search"
@@ -136,18 +136,17 @@ const Home = () => {
                   onChange={(e)=>setSearch(e.target.value)}
                 />
                 <Button className='search_btn '>Search</Button>
+                {/* <input type="text" placeholder="Search.." aria-label="Search"  onChange={(e)=>setSearch(e.target.value)}name="search"/>
+      <button type="submit"><i>Search</i></button> */}
               </Form>
             </div>
             <div className="add_btn">
-              <Button style={{backgroundColor:"green"}}  onClick={adduser}> <i class="fa-solid fa-plus"></i>&nbsp; Add User</Button>
+              <Button style={{backgroundColor:"rgb(40, 110, 176)"}}  onClick={adduser}> <i class="fa-solid fa-plus"></i>&nbsp; Add User</Button>
             </div>
           </div>
           {/* export,gender,status */}
 
           <div className="filter_div mt-5 d-flex justify-content-between flex-wrap">
-            <div className="export_csv">
-              <Button style={{backgroundColor:"green"}} className='export_btn'  onClick={exportuser}>Export To Csv</Button>
-            </div>
             <div className="filter_gender">
               <div className="filter">
                 <h3>Filter By Gender</h3>
@@ -183,7 +182,7 @@ const Home = () => {
               <h3>Short By Value</h3>
               
               <Dropdown className='text-center'>
-                <Dropdown.Toggle className='dropdown_btn' id="dropdown-basic" style={{border:"none"}}>
+                <Dropdown.Toggle className='dropdown_btn' id="dropdown-basic" style={{border:"none", color:"black"}}>
                 <BsArrowDownUp/>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>

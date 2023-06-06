@@ -20,3 +20,16 @@
 .dropdown_btn1:hover {
     color: blue !important;
 }
+
+.input[type=text],.search1 button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+    background-color: rgb(40, 110, 176);
+  }
+  .input[type=text] {
+    border: 1px solid #ccc;  
+  }

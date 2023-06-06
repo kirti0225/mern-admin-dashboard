@@ -61,7 +61,7 @@ const Header = () => {
             <header>
                 <nav>
                     
-                <NavLink to="/"><h2>Magnus</h2></NavLink>
+                <NavLink to="/"><h2>Navbar</h2></NavLink>
                     <div className="avtar">
                         {
                             logindata.ValidUserOne ? <Avatar style={{ background: "salmon", fontWeight: "bold", textTransform: "capitalize" }} onClick={handleClick}>{logindata.ValidUserOne.fname[0].toUpperCase()}</Avatar> :
